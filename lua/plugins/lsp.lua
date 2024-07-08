@@ -17,15 +17,20 @@ return {
           ".git",
           "mix.exs"
         ),
-        init_options = {
-          userLanguages = {
-            elixir = "html-eex",
-            eelixir = "html-eex",
-            heex = "html-eex",
-          },
-        },
+        -- init_options = {
+        --   userLanguages = {
+        --     elixir = "html-eex",
+        --     eelixir = "html-eex",
+        --     heex = "html-eex",
+        --   },
+        -- },
         settings = {
           tailwindCSS = {
+            includeLanguages = {
+              elixir = "html-eex",
+              eelixir = "html-eex",
+              heex = "html-eex",
+            },
             experimental = {
               classRegex = {
                 'class[:]\\s*"([^"]*)"',
